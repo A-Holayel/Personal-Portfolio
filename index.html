@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbdelRhman Holayel - Frontend Developer & Visual Designer</title>
+    <meta name="description" content="The professional design and development portfolio for AbdelRhman Holayel, showcasing projects in web development, UI/UX, and brand identity.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Homepage">Holayel</a>
+      <nav class="navbar__nav" aria-label="Main Navigation">
+        <ul class="navbar__links">
+          <li><a href="#hero" class="navbar__link">Home</a></li>
+          <li><a href="#projects" class="navbar__link">Work</a></li>
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Frontend Developer & Visual Designer</h1>
+        <p class="hero__subtitle">I bring ideas to life, from pixel-perfect mockups to clean, responsive code. My passion is creating digital experiences that are beautiful, intuitive, and performant.</p>
+        <a href="#projects" class="btn hero__cta">View My Work</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-title" id="projects-heading">Selected projects</h2>
+        <div class="projects__grid">
+
+          <!-- Card 1: Conference Website -->
+          <article class="card" data-project-type="live-site" tabindex="0">
+            <div class="card__image-container">
+               <img src="images/conference.webp" alt="5th International Physical Therapy Conference Website" class="card__img">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">5th Int'l Physical Therapy Conference</h3>
+               <p class="card__desc">Designing and developing the official website for the international conference at South Valley University, featuring schedules, speakers, and registration.</p>
+                <div class="card__tags">
+                 <span class="card__tag">Web Design</span>
+                 <span class="card__tag">Development</span>
+                 <span class="card__tag">UI/UX</span>
+                 <span class="card__tag">Graphic Design</span>
+                </div>
+                <div class="card__links">
+                  <a href="https://iptconference.com/" class="card__link card__link--primary" target="_blank" rel="noopener">View Website</a>
+                </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Case Study -->
+          <article class="card" data-project-type="case-study" tabindex="0">
+            <div class="card__image-container">
+              <img src="images/Visual identity/Main.webp" alt="Physio Life Clinic Visual Identity" class="card__img">
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Physio Life Clinic - Visual Identity</h3>
+              <p class="card__desc">A complete brand identity design, from logo conception to brand application for a modern physiotherapy clinic.</p>
+              <div class="card__tags">
+                <span class="card__tag">Brand Identity</span>
+                <span class="card__tag">Logo Design</span>
+                <span class="card__tag">Visual Design</span>
+              </div>
+              <div class="card__links">
+                <a href="physio-life-case-study.html" class="card__link card__link--primary">View Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Design Only (Lightbox) -->
+          <article class="card" data-project-type="design-only" data-image="images/Maestro Logo.webp" tabindex="0" aria-label="View Maestro Brand Identity design">
+            <div class="card__image-container">
+              <img src="images/Maestro Logo.webp" alt="Maestro Brand Identity" class="card__img">
+              <div class="card__expand-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+              </div>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Maestro Brand Identity</h3>
+              <p class="card__desc">Complete brand identity design including logo and various visual elements for a creative brand.</p>
+              <div class="card__tags">
+                <span class="card__tag">Visual Design</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      <!-- Design Gallery Section -->
+      <div class="design-gallery-section">
+        <h3 class="design-gallery-title">Design Gallery</h3>
+        <div class="design-gallery-subtitle">click any design to preview</div>
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow carousel-arrow--left" aria-label="Scroll left" type="button">‹</button>
+          <div class="design-gallery-carousel">
+            <!-- Start of Design Cards -->
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 1.webp" tabindex="0">
+            <div class="card__image-container">
+                <img src="images/design 1.webp" alt="Design 1" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 2.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 2.webp" alt="Design 2" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 3.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 3.webp" alt="Design 3" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 4.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 4.webp" alt="Design 4" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 5.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 5.webp" alt="Design 5" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 6.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 6.webp" alt="Design 6" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 7.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 7.webp" alt="Design 7" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 8.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 8.webp" alt="Design 8" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 9.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 9.webp" alt="Design 9" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+            </div>
+          </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 10.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 10.webp" alt="Design 10" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 11.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 11.webp" alt="Design 11" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 12.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 12.webp" alt="Design 12" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 13.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 13.webp" alt="Design 13" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 14.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 14.webp" alt="Design 14" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 15.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 15.webp" alt="Design 15" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 16.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 16.webp" alt="Design 16" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 17.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 17.webp" alt="Design 17" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 18.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 18.webp" alt="Design 18" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 19.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 19.webp" alt="Design 19" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 20.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 20.webp" alt="Design 20" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 21.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 21.webp" alt="Design 21" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 22.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 22.webp" alt="Design 22" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 23.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 23.webp" alt="Design 23" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 24.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 24.webp" alt="Design 24" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 25.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 25.webp" alt="Design 25" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 26.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 26.webp" alt="Design 26" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 27.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 27.webp" alt="Design 27" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 28.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 28.webp" alt="Design 28" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 29.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 29.webp" alt="Design 29" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 30.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 30.webp" alt="Design 30" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 31.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 31.webp" alt="Design 31" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 32.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 32.webp" alt="Design 32" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 33.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 33.webp" alt="Design 33" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 34.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 34.webp" alt="Design 34" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 35.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 35.webp" alt="Design 35" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 36.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 36.webp" alt="Design 36" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 37.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 37.webp" alt="Design 37" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 38.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 38.webp" alt="Design 38" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 39.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 39.webp" alt="Design 39" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 40.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 40.webp" alt="Design 40" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 41.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 41.webp" alt="Design 41" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 42.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 42.webp" alt="Design 42" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 43.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 43.webp" alt="Design 43" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+            <article class="card design-gallery-card" data-project-type="design-only" data-image="images/design 44.webp" tabindex="0">
+              <div class="card__image-container">
+                <img src="images/design 44.webp" alt="Design 44" class="card__img" loading="lazy">
+                <div class="card__expand-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg></div>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-arrow carousel-arrow--right" aria-label="Scroll right" type="button">›</button>
+        </div>
+      </div>
+            </section>
+            
+    <!-- About Section -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about__container">
+        <div class="about__img-col">
+          <img src="images/personal.webp" alt="A portrait of AbdelRhman Holayel" class="about__img">
+        </div>
+        <div class="about__content-col">
+          <h2 class="section-title" id="about-heading">Designer Who Codes</h2>
+          <p class="about__bio">I'm AbdelRhman M. Holayel, a creative technologist dedicated to building seamless digital experiences. My foundation in graphic design provides me with a deep understanding of visual storytelling and user empathy, a perspective I now apply to full-stack web development.<br>This unique blend, augmented by the strategic use of coding and AI in my workflow, allows me to translate complex problems into beautiful, functional, and accessible products that truly resonate with users.</p>
+          <div class="about__skills">
+            <div class="skills-category">
+              <h4 class="skills-category__title">Design</h4>
+              <ul class="skills-category__list">
+                <li>UI/UX Design</li>
+                <li>Brand Identity</li>
+                <li>Visual & Graphic Design</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4 class="skills-category__title">Development</h4>
+              <ul class="skills-category__list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h4 class="skills-category__title">Tools</h4>
+              <ul class="skills-category__list">
+                <li>Figma</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>WordPress</li>
+              </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact__container">
+        <h2 class="section-title" id="contact-heading">Let's Connect</h2>
+        <p class="contact__desc">Currently available for freelance work and new opportunities. Feel free to reach out!</p>
+        <a href="mailto:abdelrhman.mohamed.h7@gmail.com" class="btn btn--accent contact__email">abdelrhman.mohamed.h7@gmail.com</a>
+        <div class="contact__socials">
+          <a href="https://www.linkedin.com/in/holayel" class="contact__icon" aria-label="LinkedIn Profile" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://wa.me/201023066240" class="contact__icon" aria-label="WhatsApp Chat" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.72 13.06c-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.23-.58.75-.71.9-.13.15-.26.17-.49.06-.23-.12-.97-.36-1.85-1.16-.68-.61-1.14-1.36-1.28-1.59-.13-.23-.01-.35.1-.46.1-.1.23-.26.34-.39.11-.13.15-.23.23-.38.08-.15.04-.28-.02-.39-.06-.12-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.28-.21.22-.8.78-.8 1.9 0 1.12.82 2.2.94 2.35.12.15 1.61 2.46 3.91 3.36.55.19.98.3 1.31.38.55.13 1.05.11 1.45.07.44-.05 1.36-.56 1.55-1.1.19-.54.19-1.01.13-1.1-.06-.09-.21-.15-.44-.27z"></path><circle cx="12" cy="12" r="10"/></svg>
+          </a>
+          <a href="https://www.facebook.com/abdelrhman.holayel/" class="contact__icon" aria-label="Facebook Page" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__left">© 2025 AbdelRhman Holayel ❤️</div>
+      <div class="footer__right">
+        <!-- Social links can be repeated here if desired -->
+      </div>
+
+    </div>
+  </footer>
+    
+  <!-- Lightbox Modal for Design-Only Projects -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox__content">
+      <button class="lightbox__close" aria-label="Close lightbox">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <button class="lightbox-arrow lightbox-arrow--left" aria-label="Previous design">‹</button>
+      <button class="lightbox-arrow lightbox-arrow--right" aria-label="Next design">›</button>
+      <img src="" alt="Enlarged project image" class="lightbox__image">
+    </div>
+  </div>
+    
+  <script src="scripts/main.js"></script>
+  <button id="backToTop" title="Back to top">↑</button>
+</body>
+</html>
